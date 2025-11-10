@@ -17,3 +17,10 @@ function checkCountValue() {
     alert("Your Instagram post gained 20 followers! Keep it up!");
   }
 }
+let followers = 0;
+
+function resetFollowers() {
+    followers = 0;
+    document.getElementById("countDisplay").innerText = followers;
+    alert("The Followers count has been reset.");
+}
