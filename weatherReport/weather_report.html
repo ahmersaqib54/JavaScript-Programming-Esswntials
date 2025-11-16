@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App — Dark Mode + Transitions</title>
+  <link rel="stylesheet" href="weather_report.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Weather App</h1>
+      <div class="controls">
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <form id="weatherForm" class="search-form" autocomplete="off">
+        <input id="city" name="city" type="text" placeholder="Enter city name" required />
+        <button type="submit" class="btn">Get Weather</button>
+      </form>
+
+      <div id="loader" class="loader hidden" aria-hidden="true"></div>
+
+      <section id="weatherInfo" class="weather hidden" aria-live="polite"></section>
+
+      <h2 id="forecastTitle" class="forecast-title hidden">5-Day Forecast</h2>
+      <div id="forecast" class="forecast hidden" role="list"></div>
+    </main>
+
+    <footer class="footer">
+      <small>Powered by OpenWeatherMap</small>
+    </footer>
+  </div>
+
+  <script src="weather_report.js"></script>
+</body>
+</html>
